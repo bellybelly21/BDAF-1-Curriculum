@@ -1,0 +1,199 @@
+.rubik {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 50px;
+}
+  
+  h1{
+    font-size: 48px;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-family: "Rubik", sans-serif;
+    line-height: 0px;
+    text-transform: uppercase;
+  }
+
+  h2{
+    font-family: "Rubik", sans-serif;
+    font-size:24px;
+    font-weight: 600;
+    font-optical-sizing: auto;
+    text-transform: uppercase;
+  }
+
+  h3{
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    font-optical-sizing: auto;
+    text-transform: uppercase;
+  }
+
+  h4{
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 0;
+    font-optical-sizing: auto; 
+  }
+
+  .informacion-personal{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .informacion-contacto p, a{
+    font-size: 20px;
+    text-align: right;
+  }
+
+
+  .informacion-relevante{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  blockquote{
+    margin: 0;
+    font-size: 24px;
+  }
+
+  ol,ul{
+    padding-inline-start: 20px;
+  }
+
+  .habilidades ul{
+    list-style: none;
+    padding: 0;
+  }
+
+  li{
+    line-height: 30px;
+  }
+  .experiencia{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .universidad{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 10px;
+  }
+
+  .subtitulo{
+    font-size: 25px;
+    color: rgb(80, 80, 80);
+  }
+
+  main{
+    display: flex;
+    justify-content: space-between;
+    gap: 85px;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .informacion-complementaria{
+    display:flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: right;
+    
+  }
+  .curso{
+    display: inherit;
+    flex-direction: column;
+  }
+
+  .cursos{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .curso p{
+    margin: 8px 0;
+  }
+
+  .curso b{
+    font-size: 13px;
+    font-weight: 600;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .redes{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .link{
+    display: inherit;
+    align-items: center; 
+    gap: 5px;
+    justify-content: end;
+  }
+
+  .link a{
+    font-size: 15px;
+  }
+
+  .link-portafolio{
+    font-size: 18px;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover{
+    text-decoration: black solid underline;
+  }
+
+  @media screen and (max-width:800px){
+
+    html{
+      margin: 24px;
+    }
+    
+    .informacion-personal{
+      flex-direction: column;
+      padding-bottom: 16px;
+    }
+
+    .informacion-contacto p{
+      text-align: left;
+    }
+
+    main{
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .informacion-complementaria{
+      text-align: left;
+    }
+
+    .link{
+      justify-content: left;
+    }
+
+    .link a{
+      order: 2;
+    }
+
+    .link img{
+      order: 1;
+    }
+
+  }
+
+  
