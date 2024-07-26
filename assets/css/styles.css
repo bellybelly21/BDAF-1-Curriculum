@@ -7,7 +7,7 @@
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 0;
-    margin: 50px;
+    margin: 30px 50px;
 }
   
   h1{
@@ -15,7 +15,8 @@ html{
     font-weight: 700;
     font-optical-sizing: auto;
     font-family: "Rubik", sans-serif;
-    line-height: 0px;
+    margin: 0;
+    margin-top: 16px;
     text-transform: uppercase;
   }
 
@@ -33,18 +34,20 @@ html{
     font-weight: 600;
     font-optical-sizing: auto;
     text-transform: uppercase;
+    margin: 0;
   }
 
   h4{
     font-family: "Rubik", sans-serif;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 0;
     font-optical-sizing: auto; 
   }
 
   .informacion-personal{
     display: flex;
+    align-items: start;
     justify-content: space-between;
   }
 
@@ -90,6 +93,8 @@ html{
 
   .subtitulo{
     font-size: 25px;
+    margin-top: 8px;
+    margin-bottom: 0;
     color: rgb(80, 80, 80);
   }
 
@@ -100,11 +105,23 @@ html{
     font-family: "Rubik", sans-serif;
   }
 
+  .imagen-texto{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .imagen-texto img{
+    border-radius: 50%;
+  }
+
   .informacion-complementaria{
     display:flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 32px;
     text-align: right;
+    margin-top: 24px;
     
   }
   .curso{
@@ -158,6 +175,65 @@ html{
     text-decoration: black solid underline;
   }
 
+  .nav{
+    padding: 8px 24px;
+    width: fit-content;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 24px;
+    border-radius: 24px;
+    background-color: beige;
+  }
+  .nav a{
+    font-size: 16px;
+    color: rgb(54, 54, 54);
+  }
+
+  textarea{
+    resize: none;
+  }
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 400px;
+  }
+
+  .nombre, .correo, .mensaje{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  input, textarea{
+    padding: 8px 16px;
+    border-radius: 8px;
+    border-color: rgb(118, 118, 118);
+    border: 1px solid;
+    padding: 12px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+  }
+
+  button{
+    padding: 8px;
+    border: none;
+    background-color: crimson;
+    border-radius: 16px;
+    font-weight: 700;
+    color: white;
+  }
+
+  label{
+    font-weight: 600;
+  }
+
+
+  .nombre{
+    margin-top: 32px;
+  }
+
   @media screen and (max-width:800px){
 
     html{
@@ -192,6 +268,16 @@ html{
 
     .link img{
       order: 1;
+    }
+
+    .imagen-texto{
+      flex-direction: column;
+      gap: 0;
+      align-items: flex-start;
+    }
+
+    .formulario{
+      width: auto;
     }
 
   }
